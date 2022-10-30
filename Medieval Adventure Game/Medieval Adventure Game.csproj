@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B97BB6C6-BF74-4FAC-8C25-00D7515498C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Medieval_Adventure_Game</RootNamespace>
+    <AssemblyName>Medieval Adventure Game</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-187484756-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background Wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-hvrpOmuMrAI-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-E5QRDNG4-0E-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest dirt road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travelling Cart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-magical-forest-fabulous-trees-forest-landscape-sun-rays-illuminate-leaves-branches-trees-magical-summer-forest-illustration_86390-6876.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-magical-forest-fabulous-trees-forest-landscape-sun-rays-illuminaaaaate-leaves-branches-trees-magical-summer-forest-illustration_86390-6876%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-magical-forest-fabulous-trees-forest-landscape-sun-rays-illuminate-leaves-branches-trees-magical-summer-forest-illustration_86390-6876%284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREONE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURETWO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURETHREE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREFOUR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREFIVE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURESSIX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appleattack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BBC_One_-_The_Musketeers__Series_1_-_Athos-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREONE-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURETWO-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURETHREE-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREFOUR-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTUREFIVE-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PICTURESSIX-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar2centered-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadvar3centered-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartandhadvar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\460388__d-n-audio-uk__metal-cabinet-shove.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\471148__worldmaxter__sword-slide-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\203042__jjhouse4__shoving-something-in-cloth.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-WSaCC-6JM2Y-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-WSaCC-6JM2Y-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandits2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandits centered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banitsafga-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart_3__4_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moss-covered-stone-in-the-woods-large-white-rock-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travelling cartagain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\destroyed carriage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartmoremroe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-10-23 174528.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amsera1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\King Arthur - Camelot, Kieran Belshaw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\King Arthur - Camelot, Kieran Belshaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-q3WiSOPZjoE-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirtroadFantasy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy trader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medival_trader-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trader-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasyroad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasypath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evilroad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseinwoods.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absrtractman in black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome village expanded.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fallforest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morefallforest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadbend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket image.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkforest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forestdarkImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkforest2Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkforest3Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy mountain range.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mountainrange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graymountains.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burningtree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evilland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geograpy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\322445__goodlistener__horse-whinny-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\467749__sgak__gallop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\420668__sypherzent__basic-melee-swing-miss-whoosh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\275015__wadaltmon__bite-apple.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\528962__zteen__crunch.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\444491__breviceps__short-choir.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\402753__klavo1985__medieval-horn-by-kris-klavenes-wav.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27858__erdie__sword04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\198874__bone666138__fanfare.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\367144__jrhodesza__wheeled-chair-rolling.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2596__schademans__bush7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\524215__magnuswaker__schwing-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352513__inspectorj__destruction-wooden-a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456440__inspectorj__bird-whistling-robin-single-13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66763__bidone__raven.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67356__bidone__raven-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\458074__theuncertainman__what-can-i-do-for-you-npc-british-male.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\477394__nuff3__steps-dirt-3b.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\389454__lzmraul__footsteps-on-dirt.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\410392__univ-lyon3__pantigny-jeanloup-2017-2018-eerieencounter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\410392_univ-lyon3_pantigny-jeanloup-2017-2018-eerieencounter %28mp3cut.net%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\487862__bendrain__footsteps-dirt-single-05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\581597__samsterbirdies__gun-cannon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\609793__volvion__small-smurf-noises-[AudioTrimmer.com].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\349698__drmaysta__light-slow-swoosh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\514103__jenfarrow__wicker-basket-sound-[AudioTrimmer.com].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\338938__natemarler__human-male-yell.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\218386__motion-s__whistling-wind %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\650222__alba-mac__hmph-03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\396500__alonsotm__firespell3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\340893__passairmangrace__malesnore-raw-bip-[AudioTrimmer.com].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\467749__sgak__gallop-[AudioTrimmer.com].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180328__aeonemi__soft-wind-blowing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandits-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedievalBandit1_featured-894x488-4f673e80160b565618d3be1998bbc6ce-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costume-da-ladro-1960-250x250h-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4dd14038-a067-4ace-822f-d8ed753f0d5a-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadavrawriting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadavrawriting-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadavrawriting-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25f71e55350b21f8ce20a361927d31e8-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hadbvarahgrahar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\543965__lunevix__cricket-grillo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180328__aeonemi__soft-wind-blowing-[AudioTrimmer.com].wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\180328__aeonemi__soft-wind-blowing-[AudioTrimmer.com] %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\157804__soundcollectah__rock-falls-with-cracking.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\423935__fielastro__draw-sword-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\278888__theshaggyfreak__shaking-branch-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16796__pushtobreak__wind1 %281%29.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
